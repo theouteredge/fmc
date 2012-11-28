@@ -1,15 +1,29 @@
 doctype 5
 html
   head
-    title Friday Music Club | #{title}
+    title Friday Music Club
 
-    link(rel='stylesheet', href='/public/css/core.css')
+    link(rel='stylesheet', href='/content/css/core.css')
     
-   body
-     div(id=head)
-       h1 Friday Music Club
-     
-     div(id=head)
-       block content
+    script(type='text/javascript', src='/content/js/lib/jquery.min.js')
+    script(type='text/javascript', src='socket.io/socket.io.js')
+    
+    block head
+    
+  body
+    div(id='head')
+      div(class='wrapper')
+        h1 Friday Music Club
 
-     div(id=foot)
+        hr(class='clear')
+     
+    
+    div(class='wrapper')
+      div(id='content')
+        block content
+
+        hr(class='clear')
+
+      
+    div(id='foot')
+      p copyright theouteredge

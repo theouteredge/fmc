@@ -1,0 +1,23 @@
+<html>
+	<head>
+		<script type='text/javascript' src='./public/content/js/lib/jquery.min.js'></script>
+		<script type='text/javascript'>
+			$(window).ready(function() {
+				$('#change-iframe').click(function(event) {
+					$('#iframe-container').remove('#evil-iframe');
+					$('#iframe-container').html('<iframe id=\'evil-iframe\'></iframe>');
+					$('#evil-iframe').attr('src', 'http://google.com');	
+
+					return false;
+				});
+			});
+		</script>
+	</head>
+	<body>
+		<p>so can we stop the fucking cunt of an onwindowunload message?</p>
+		<div id='iframe-container'>
+			<iframe id='evil-iframe' src='slave.html'></iframe>
+		</div>
+		<a href='#' id='change-iframe'>change the iframe</a>
+	</body>
+</html>

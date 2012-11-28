@@ -1,0 +1,142 @@
+﻿hr.hack {
+    visibility: hidden;
+    clear: both;
+    height: 0;
+}
+
+.highlight-error {
+    background: #E51400 !important;
+    padding: 3px 6px !important;
+    color: #fff !important;
+}
+
+.highlight {
+    background: #1BA1E2 !important;
+    padding: 3px 6px !important;
+    color: #fff !important;
+}
+
+.highlight a {
+    color: #fff !important;
+}
+
+/* Start icon classes */
+
+.icon {
+    border: 0px;    
+}
+
+.icon.small{
+    height: 24px;
+    width: 24px;
+}
+
+.icon.xsmall{
+    height: 16px;
+    width: 16px;
+}
+
+/* End icon classes */
+
+/* Start date picker class elements */
+ 
+.ui-timepicker-div .ui-widget-header { margin-bottom: 8px; }
+.ui-timepicker-div dl { text-align: left; }
+.ui-timepicker-div dl dt { height: 25px; margin-bottom: -25px; }
+.ui-timepicker-div dl dd { margin: 0 10px 10px 65px; }
+.ui-timepicker-div td { font-size: 90%; }
+.ui-tpicker-grid-label { background: none; border: none; margin: 0; padding: 0; }          
+    
+/* End date picker class elements */
+
+/*  The column containing the checkbox on the config list screen */
+tr td.selector {
+    width: 65px;
+    text-align: center;
+}
+
+tr.selected {
+    background-color: khaki; /*#1BA1E2 (Windows accent blue)*/
+}
+
+
+
+.big-box {
+    vertical-align: top;
+    width: 140px;
+    height: 140px;
+    background-color: #1BA1E2;
+    color: white;
+    display: inline-block;
+    padding: 5px;
+    margin-right: 18px;
+    margin-bottom: 18px;
+    position: relative;
+}
+
+.big-box .title {
+    display: block;
+    font-size: 20px;
+    text-align: right;
+}
+
+.big-box .number {
+    display: block;
+    font-size: 45px;
+    text-align: right;
+    position: absolute;
+    bottom: 0px;
+    right: 5px;
+}
+
+ul.inline {
+    list-style: inside;
+    list-style-image: none;
+    margin: 0;
+    padding: 0;
+
+    font-size: 12px;
+}
+
+ul.inline li {
+    display: inline;
+    margin: 0 15px 0 0;
+}
+
+ul.inline li a {
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+ul.pager {
+    margin-top: 15px;
+}
+
+.jOrgChart .node {
+    width: 150px;
+    height: 75px;
+}
+
+.jOrgChart .node-cell .Complete {
+    background: #339933;
+    color: white;
+}
+
+.jOrgChart .node-cell .Executing, .jOrgChart .node-cell .Queued {
+    background: #1BA1E2;
+    color: white;
+}
+
+.jOrgChart .node-cell .QueuedForExecution {
+    background: #F09609;
+    color: white;
+}
+
+.jOrgChart .node-cell .NotStarted {
+    background: #00ABA9;
+}
+
+.jOrgChart .node-cell .Failed {
+    background: #E51400;
+    color: white;
+}

@@ -1,1 +1,67 @@
-div fuck me this shit is actually running!
+extends layout
+
+block head
+  script(type='text/javascript', src='/content/js/room.js')
+
+block content
+  div(id='welcome')
+    div(class='grid-12')
+      h2 Welcome to friday music club
+
+      p FMC allow you to hook up with people online and share a playlist on friday
+
+
+    div(class='grid-7', id='connect')
+      h3 Connect To FMC
+        form(id='connect-form')
+          input(type='text', name='handle', id='connect-form-handle', placeholder='your handle')
+          input(type='text', name='email', id='connect-form-email', placeholder='your email')
+
+          input(type='submit', value='connect', id='connect-form-submit')
+
+    div(class='grid-7', id='rooms')
+      h3 Available Rooms
+      ul(id='rooms-list')
+      a(href='#', id='rooms-refresh') refresh
+
+      h3 Create a Room
+      form(id='rooms-form')
+        input(type='text', name='name', id='rooms-form-name', placeholder='room name')
+        input(type='submit', value='create', id='rooms-form-submit')
+
+      
+
+
+
+  div(id='room')
+    h3(id='room-title', class='grid-20')
+
+    a(href='#', id='room-start') start playing some tunes
+
+    div(class='grid-9', id='chat', style='height: 300px;')
+      h3 Chat
+      
+      ul(id='chat-list')
+
+      form(id='chat-form')
+        input(type='text', name='chat.message', id='chat-form-message', placeholder='say something interesting')
+        input(type='submit', value='chat', id='chat-form-submit')
+
+
+    div(class='grid-10', id='now-playing')
+      p(id='now-playing-url')
+      p(id='now-playing-songname')
+      p(id='now-playing-artistname')
+      p(id='now-playing-albumname')
+
+      div(id='iframe-container')
+        iframe(id='now-playing-iframe')
+
+    div(class='grid-5', id='playlist')
+      form(id='playlist-form')
+        input(type='text', name='name', id='playlist-form-search', placeholder='search for song')
+        input(type='submit', value='search', id='playlist-form-submit')
+
+      ul(id='playlist-form-results')
+
+    ul(id='playlist-list', class='grid-4')
