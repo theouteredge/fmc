@@ -8,7 +8,11 @@ block content
     div(class='grid-12')
       h2 Welcome to friday music club
 
-      p FMC allow you to hook up with people online and share a playlist on friday
+      p Friday Music Club lets you to hook up with your friends, create your playlist and listen to music with your friends
+      p All you have to do is connect to FMC using the Connect to FMC form, then pick a room or create your own, invite some friends and then enjoy a crazy eclectic play list of all your friends different music tasts.
+      p Connect and discover music the social way
+
+      p Powered by groovestark.com and tinysong.com
 
 
     div(class='grid-7', id='connect')
@@ -18,6 +22,7 @@ block content
           input(type='text', name='email', id='connect-form-email', placeholder='your email')
 
           input(type='submit', value='connect', id='connect-form-submit')
+
 
     div(class='grid-7', id='rooms')
       h3 Available Rooms
@@ -29,39 +34,54 @@ block content
         input(type='text', name='name', id='rooms-form-name', placeholder='room name')
         input(type='submit', value='create', id='rooms-form-submit')
 
+    hr(class='clear')
+
       
 
 
 
   div(id='room')
-    h3(id='room-title', class='grid-20')
+    h2(id='room-title', class='grid-20')
 
-    a(href='#', id='room-start') start playing some tunes
+    
 
-    div(class='grid-9', id='chat', style='height: 300px;')
-      h3 Chat
-      
-      ul(id='chat-list')
+    div(class='grid-7', id='chat', style='height: 300px;')
+      h3 Room Chat
 
       form(id='chat-form')
         input(type='text', name='chat.message', id='chat-form-message', placeholder='say something interesting')
         input(type='submit', value='chat', id='chat-form-submit')
+      
+      ul(id='chat-list')
 
 
-    div(class='grid-10', id='now-playing')
+    div(id='playlist', class='grid-6')
+      h3 Playlist
+      ul(id='playlist-list')
+
+
+    div(class='grid-6', id='now-playing')
+      h3 Now Playing
+
+      a(href='#', id='room-start') start playing some tunes
+
       p(id='now-playing-url')
       p(id='now-playing-songname')
       p(id='now-playing-artistname')
       p(id='now-playing-albumname')
 
-      div(id='iframe-container')
+      div(id='playing-container')
         iframe(id='now-playing-iframe')
 
-    div(class='grid-5', id='playlist')
-      form(id='playlist-form')
-        input(type='text', name='name', id='playlist-form-search', placeholder='search for song')
-        input(type='submit', value='search', id='playlist-form-submit')
+      div(class='grid-5', id='playlist')
+        h4 Create Playlist
 
-      ul(id='playlist-form-results')
+        form(id='playlist-form')
+          input(type='text', name='name', id='playlist-form-search', placeholder='search for a song')
+          input(type='submit', value='search', id='playlist-form-submit')
 
-    ul(id='playlist-list', class='grid-4')
+        ul(id='playlist-form-results')
+
+    
+
+    hr(class='clear')

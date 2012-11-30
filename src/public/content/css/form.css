@@ -4,13 +4,12 @@ form {
 }
 
 input {
-    margin: 6px 0 0 0;
+    margin: 6px 6px 6px 0px;
 }
 
 input[type=text], input[type=file], select {
     padding: 5px;
-    min-width: 400px;
-    width: 165px;
+    min-width: 60%;
     background-color: white;
 }
 

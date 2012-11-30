@@ -197,12 +197,12 @@ function handleSocketEvents() {
 
 
         socket.on('chat', function (data) {
-            $("#chat").prepend('<li class="chat"><span>' + data.handle + '</span> ' + data.message + '</li>');
+            $("#chat-list").prepend('<li class="chat"><span>' + data.handle + '</span> ' + data.message + '</li>');
         });
 
 
         socket.on('announcement', function (data) {
-           $("#chat").prepend('<li class="announcement"><span>' + data.handle + '</span> ' + data.message + '</li>');
+           $("#chat-list").prepend('<li class="announcement"><span>' + data.handle + '</span> ' + data.message + '</li>');
         });
 
 
